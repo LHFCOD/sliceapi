@@ -1,0 +1,2 @@
+/root/project/sliceapi/build/CMakeFiles/mds.dir
+/root/project/sliceapi/build/test/CMakeFiles/test1.dir

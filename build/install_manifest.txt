@@ -1,0 +1,1 @@
+/root/project/sliceapi/deploy/bin/libmds.so

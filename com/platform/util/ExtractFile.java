@@ -2,7 +2,7 @@ package com.platform.util;
 public class ExtractFile {
 	static{
 		System.out.println(System.getProperty("java.library.path"));
-		System.loadLibrary("libmds");
+		System.loadLibrary("mds");
 	}
 	ExtractFile(String filePath)
 	{

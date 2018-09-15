@@ -37,4 +37,4 @@ target_link_libraries(${TARGET} Qt5Gui Qt5Core Qt5Xml)
 set(CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/deploy")
 install(TARGETS ${TARGET} RUNTIME DESTINATION bin
         LIBRARY DESTINATION bin)
-set_target_properties(${TARGET} PROPERTIES INSTALL_RPATH "/home/mi/software/Qt5.8/5.8/gcc_64/lib")
+set_target_properties(${TARGET} PROPERTIES INSTALL_RPATH ${QT_LIB})

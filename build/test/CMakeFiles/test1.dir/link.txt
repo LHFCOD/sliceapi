@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/test1.dir/test.cpp.o  -o test1  -L/usr/local/Qt-5.8.0/lib -rdynamic ../libmds.so -lQt5Gui -lQt5Core -lQt5Xml -Wl,-rpath,/usr/local/Qt-5.8.0/lib:/root/project/sliceapi/build 
