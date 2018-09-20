@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/MyThrift.dir/server.cpp.o CMakeFiles/MyThrift.dir/client.cpp.o  -o MyThrift -rdynamic 

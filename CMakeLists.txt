@@ -3,10 +3,13 @@ cmake_minimum_required (VERSION 2.8)
 # 项目信息
 project (sliceapi)
 add_subdirectory("${PROJECT_SOURCE_DIR}/test")
+add_subdirectory("${PROJECT_SOURCE_DIR}/thrift/server")
+add_subdirectory("${PROJECT_SOURCE_DIR}/thrift/client")
 
 # 查找当前目录下的所有源文件
 # 并将名称保存到 DIR_SRCS 变量
 aux_source_directory(./source DIR_SRCS)
+
 MESSAGE( STATUS ${DIR_SRCS})
 list(REMOVE_ITEM DIR_SRCS "./source/MicroComDocIO.cpp") 
 MESSAGE( STATUS ${DIR_SRCS})
@@ -27,7 +30,7 @@ ELSEIF (CMAKE_SYSTEM_NAME MATCHES "Linux")
         #	set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./target/linux")
 ENDIF ()
 link_directories(${QT_LIB})
-add_compile_options(-std=c++11 -fPIC)
+add_compile_options(-std=c++0x -fPIC)
 # 指定生成目标
 set(TARGET mds)
 add_library(${TARGET} SHARED ${DIR_SRCS} ${INC_ALL})

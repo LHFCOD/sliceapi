@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libmds.so -o libmds.so CMakeFiles/mds.dir/source/export.cpp.o CMakeFiles/mds.dir/source/ComDocIO.cpp.o CMakeFiles/mds.dir/source/JavaApi.cpp.o CMakeFiles/mds.dir/source/interface.cpp.o  -L/home/mi/software/Qt5.8/5.8/gcc_64/lib -lQt5Gui -lQt5Core -lQt5Xml -Wl,-rpath,/home/mi/software/Qt5.8/5.8/gcc_64/lib: 

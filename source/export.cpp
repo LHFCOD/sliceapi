@@ -1,4 +1,5 @@
 #include "../include/export.h"
+#include <iostream>
 using namespace TileImage;
 MDSFile *file;
 void ReadMDSFile(QString _RootDir)

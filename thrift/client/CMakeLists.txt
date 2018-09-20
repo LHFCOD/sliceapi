@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.8)
+project(client)
+aux_source_directory(. DIR_SRCS)
+aux_source_directory(../gen-cpp DIR_SRCS)
+list(REMOVE_ITEM DIR_SRCS "../gen-cpp/Calculator_server.skeleton.cpp")
+add_compile_options(-std=c++0x)
+
+set(TARGET thrift-client)
+add_executable(${TARGET} ${DIR_SRCS})
+target_link_libraries(${TARGET} thrift)
