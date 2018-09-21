@@ -55,7 +55,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mi/project/slicePro/sliceapi/cmake-build-release/test/cmake_install.cmake")
-  include("/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/cmake_install.cmake")
+  include("/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/cmake_install.cmake")
   include("/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/cmake_install.cmake")
 
 endif()

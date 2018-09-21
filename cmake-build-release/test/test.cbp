@@ -5,7 +5,7 @@
       <Option title="test" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\thrift\;CMake Files\thrift\client\;CMake Files\thrift\server\;CMake Files\test\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\thrift\;CMake Files\thrift\client\;CMake Files\test\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/test" />
@@ -76,17 +76,17 @@
       <Unit filename="/home/mi/project/slicePro/sliceapi/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\thrift\client\" />
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\" />
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\" />
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
           <Option virtualFolder="CMake Files\thrift\client\" />
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/server/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\thrift\server\" />
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/server/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\thrift\server\" />
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\client\" />
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/test/CMakeLists.txt">
           <Option virtualFolder="CMake Files\test\" />

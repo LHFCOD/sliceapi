@@ -1,4 +1,5 @@
 #.gitignore
+cmake-build-release
 cmake-build-debug
 data/
 .idea

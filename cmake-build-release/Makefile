@@ -190,7 +190,7 @@ thrift-server: cmake_check_build_system
 
 # fast build rule for target.
 thrift-server/fast:
-	$(MAKE) -f thrift/server/CMakeFiles/thrift-server.dir/build.make thrift/server/CMakeFiles/thrift-server.dir/build
+	$(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/build
 .PHONY : thrift-server/fast
 
 #=============================================================================

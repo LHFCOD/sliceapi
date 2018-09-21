@@ -169,194 +169,86 @@ thrift-client/fast:
 	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/build
 .PHONY : thrift-client/fast
 
-__/gen-cpp/Calculator.o: __/gen-cpp/Calculator.cpp.o
+__/gen-cpp/SliceEntry.o: __/gen-cpp/SliceEntry.cpp.o
 
-.PHONY : __/gen-cpp/Calculator.o
-
-# target to build an object file
-__/gen-cpp/Calculator.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o
-.PHONY : __/gen-cpp/Calculator.cpp.o
-
-__/gen-cpp/Calculator.i: __/gen-cpp/Calculator.cpp.i
-
-.PHONY : __/gen-cpp/Calculator.i
-
-# target to preprocess a source file
-__/gen-cpp/Calculator.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.i
-.PHONY : __/gen-cpp/Calculator.cpp.i
-
-__/gen-cpp/Calculator.s: __/gen-cpp/Calculator.cpp.s
-
-.PHONY : __/gen-cpp/Calculator.s
-
-# target to generate assembly for a file
-__/gen-cpp/Calculator.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.s
-.PHONY : __/gen-cpp/Calculator.cpp.s
-
-__/gen-cpp/SharedService.o: __/gen-cpp/SharedService.cpp.o
-
-.PHONY : __/gen-cpp/SharedService.o
+.PHONY : __/gen-cpp/SliceEntry.o
 
 # target to build an object file
-__/gen-cpp/SharedService.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o
-.PHONY : __/gen-cpp/SharedService.cpp.o
+__/gen-cpp/SliceEntry.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o
+.PHONY : __/gen-cpp/SliceEntry.cpp.o
 
-__/gen-cpp/SharedService.i: __/gen-cpp/SharedService.cpp.i
+__/gen-cpp/SliceEntry.i: __/gen-cpp/SliceEntry.cpp.i
 
-.PHONY : __/gen-cpp/SharedService.i
+.PHONY : __/gen-cpp/SliceEntry.i
 
 # target to preprocess a source file
-__/gen-cpp/SharedService.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.i
-.PHONY : __/gen-cpp/SharedService.cpp.i
+__/gen-cpp/SliceEntry.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.i
+.PHONY : __/gen-cpp/SliceEntry.cpp.i
 
-__/gen-cpp/SharedService.s: __/gen-cpp/SharedService.cpp.s
+__/gen-cpp/SliceEntry.s: __/gen-cpp/SliceEntry.cpp.s
 
-.PHONY : __/gen-cpp/SharedService.s
+.PHONY : __/gen-cpp/SliceEntry.s
 
 # target to generate assembly for a file
-__/gen-cpp/SharedService.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.s
-.PHONY : __/gen-cpp/SharedService.cpp.s
+__/gen-cpp/SliceEntry.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.s
+.PHONY : __/gen-cpp/SliceEntry.cpp.s
 
-__/gen-cpp/SharedService_server.skeleton.o: __/gen-cpp/SharedService_server.skeleton.cpp.o
+__/gen-cpp/slice_constants.o: __/gen-cpp/slice_constants.cpp.o
 
-.PHONY : __/gen-cpp/SharedService_server.skeleton.o
+.PHONY : __/gen-cpp/slice_constants.o
 
 # target to build an object file
-__/gen-cpp/SharedService_server.skeleton.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o
-.PHONY : __/gen-cpp/SharedService_server.skeleton.cpp.o
+__/gen-cpp/slice_constants.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o
+.PHONY : __/gen-cpp/slice_constants.cpp.o
 
-__/gen-cpp/SharedService_server.skeleton.i: __/gen-cpp/SharedService_server.skeleton.cpp.i
+__/gen-cpp/slice_constants.i: __/gen-cpp/slice_constants.cpp.i
 
-.PHONY : __/gen-cpp/SharedService_server.skeleton.i
+.PHONY : __/gen-cpp/slice_constants.i
 
 # target to preprocess a source file
-__/gen-cpp/SharedService_server.skeleton.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.i
-.PHONY : __/gen-cpp/SharedService_server.skeleton.cpp.i
+__/gen-cpp/slice_constants.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.i
+.PHONY : __/gen-cpp/slice_constants.cpp.i
 
-__/gen-cpp/SharedService_server.skeleton.s: __/gen-cpp/SharedService_server.skeleton.cpp.s
+__/gen-cpp/slice_constants.s: __/gen-cpp/slice_constants.cpp.s
 
-.PHONY : __/gen-cpp/SharedService_server.skeleton.s
+.PHONY : __/gen-cpp/slice_constants.s
 
 # target to generate assembly for a file
-__/gen-cpp/SharedService_server.skeleton.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.s
-.PHONY : __/gen-cpp/SharedService_server.skeleton.cpp.s
+__/gen-cpp/slice_constants.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.s
+.PHONY : __/gen-cpp/slice_constants.cpp.s
 
-__/gen-cpp/shared_constants.o: __/gen-cpp/shared_constants.cpp.o
+__/gen-cpp/slice_types.o: __/gen-cpp/slice_types.cpp.o
 
-.PHONY : __/gen-cpp/shared_constants.o
+.PHONY : __/gen-cpp/slice_types.o
 
 # target to build an object file
-__/gen-cpp/shared_constants.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o
-.PHONY : __/gen-cpp/shared_constants.cpp.o
+__/gen-cpp/slice_types.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o
+.PHONY : __/gen-cpp/slice_types.cpp.o
 
-__/gen-cpp/shared_constants.i: __/gen-cpp/shared_constants.cpp.i
+__/gen-cpp/slice_types.i: __/gen-cpp/slice_types.cpp.i
 
-.PHONY : __/gen-cpp/shared_constants.i
-
-# target to preprocess a source file
-__/gen-cpp/shared_constants.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.i
-.PHONY : __/gen-cpp/shared_constants.cpp.i
-
-__/gen-cpp/shared_constants.s: __/gen-cpp/shared_constants.cpp.s
-
-.PHONY : __/gen-cpp/shared_constants.s
-
-# target to generate assembly for a file
-__/gen-cpp/shared_constants.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.s
-.PHONY : __/gen-cpp/shared_constants.cpp.s
-
-__/gen-cpp/shared_types.o: __/gen-cpp/shared_types.cpp.o
-
-.PHONY : __/gen-cpp/shared_types.o
-
-# target to build an object file
-__/gen-cpp/shared_types.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o
-.PHONY : __/gen-cpp/shared_types.cpp.o
-
-__/gen-cpp/shared_types.i: __/gen-cpp/shared_types.cpp.i
-
-.PHONY : __/gen-cpp/shared_types.i
+.PHONY : __/gen-cpp/slice_types.i
 
 # target to preprocess a source file
-__/gen-cpp/shared_types.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.i
-.PHONY : __/gen-cpp/shared_types.cpp.i
+__/gen-cpp/slice_types.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.i
+.PHONY : __/gen-cpp/slice_types.cpp.i
 
-__/gen-cpp/shared_types.s: __/gen-cpp/shared_types.cpp.s
+__/gen-cpp/slice_types.s: __/gen-cpp/slice_types.cpp.s
 
-.PHONY : __/gen-cpp/shared_types.s
-
-# target to generate assembly for a file
-__/gen-cpp/shared_types.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.s
-.PHONY : __/gen-cpp/shared_types.cpp.s
-
-__/gen-cpp/tutorial_constants.o: __/gen-cpp/tutorial_constants.cpp.o
-
-.PHONY : __/gen-cpp/tutorial_constants.o
-
-# target to build an object file
-__/gen-cpp/tutorial_constants.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o
-.PHONY : __/gen-cpp/tutorial_constants.cpp.o
-
-__/gen-cpp/tutorial_constants.i: __/gen-cpp/tutorial_constants.cpp.i
-
-.PHONY : __/gen-cpp/tutorial_constants.i
-
-# target to preprocess a source file
-__/gen-cpp/tutorial_constants.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.i
-.PHONY : __/gen-cpp/tutorial_constants.cpp.i
-
-__/gen-cpp/tutorial_constants.s: __/gen-cpp/tutorial_constants.cpp.s
-
-.PHONY : __/gen-cpp/tutorial_constants.s
+.PHONY : __/gen-cpp/slice_types.s
 
 # target to generate assembly for a file
-__/gen-cpp/tutorial_constants.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.s
-.PHONY : __/gen-cpp/tutorial_constants.cpp.s
-
-__/gen-cpp/tutorial_types.o: __/gen-cpp/tutorial_types.cpp.o
-
-.PHONY : __/gen-cpp/tutorial_types.o
-
-# target to build an object file
-__/gen-cpp/tutorial_types.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o
-.PHONY : __/gen-cpp/tutorial_types.cpp.o
-
-__/gen-cpp/tutorial_types.i: __/gen-cpp/tutorial_types.cpp.i
-
-.PHONY : __/gen-cpp/tutorial_types.i
-
-# target to preprocess a source file
-__/gen-cpp/tutorial_types.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.i
-.PHONY : __/gen-cpp/tutorial_types.cpp.i
-
-__/gen-cpp/tutorial_types.s: __/gen-cpp/tutorial_types.cpp.s
-
-.PHONY : __/gen-cpp/tutorial_types.s
-
-# target to generate assembly for a file
-__/gen-cpp/tutorial_types.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.s
-.PHONY : __/gen-cpp/tutorial_types.cpp.s
+__/gen-cpp/slice_types.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.s
+.PHONY : __/gen-cpp/slice_types.cpp.s
 
 client.o: client.cpp.o
 
@@ -398,27 +290,15 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... edit_cache"
-	@echo "... __/gen-cpp/Calculator.o"
-	@echo "... __/gen-cpp/Calculator.i"
-	@echo "... __/gen-cpp/Calculator.s"
-	@echo "... __/gen-cpp/SharedService.o"
-	@echo "... __/gen-cpp/SharedService.i"
-	@echo "... __/gen-cpp/SharedService.s"
-	@echo "... __/gen-cpp/SharedService_server.skeleton.o"
-	@echo "... __/gen-cpp/SharedService_server.skeleton.i"
-	@echo "... __/gen-cpp/SharedService_server.skeleton.s"
-	@echo "... __/gen-cpp/shared_constants.o"
-	@echo "... __/gen-cpp/shared_constants.i"
-	@echo "... __/gen-cpp/shared_constants.s"
-	@echo "... __/gen-cpp/shared_types.o"
-	@echo "... __/gen-cpp/shared_types.i"
-	@echo "... __/gen-cpp/shared_types.s"
-	@echo "... __/gen-cpp/tutorial_constants.o"
-	@echo "... __/gen-cpp/tutorial_constants.i"
-	@echo "... __/gen-cpp/tutorial_constants.s"
-	@echo "... __/gen-cpp/tutorial_types.o"
-	@echo "... __/gen-cpp/tutorial_types.i"
-	@echo "... __/gen-cpp/tutorial_types.s"
+	@echo "... __/gen-cpp/SliceEntry.o"
+	@echo "... __/gen-cpp/SliceEntry.i"
+	@echo "... __/gen-cpp/SliceEntry.s"
+	@echo "... __/gen-cpp/slice_constants.o"
+	@echo "... __/gen-cpp/slice_constants.i"
+	@echo "... __/gen-cpp/slice_constants.s"
+	@echo "... __/gen-cpp/slice_types.o"
+	@echo "... __/gen-cpp/slice_types.i"
+	@echo "... __/gen-cpp/slice_types.s"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"

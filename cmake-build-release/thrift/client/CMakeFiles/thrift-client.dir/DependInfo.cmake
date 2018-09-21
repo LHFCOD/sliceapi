@@ -4,13 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o"
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o"
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService_server.skeleton.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o"
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_constants.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o"
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_types.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o"
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_constants.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o"
-  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_types.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o"
+  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o"
+  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o"
+  "/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o"
   "/home/mi/project/slicePro/sliceapi/thrift/client/client.cpp" "/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

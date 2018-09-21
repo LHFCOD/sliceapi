@@ -5,7 +5,7 @@
       <Option title="sliceapi" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\thrift\;CMake Files\thrift\client\;CMake Files\thrift\server\;CMake Files\test\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\thrift\;CMake Files\thrift\client\;CMake Files\test\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release" />
@@ -182,12 +182,13 @@
          </MakeCommands>
       </Target>
       <Target title="thrift-server">
-         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/thrift-server" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server" />
+         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/thrift-server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/mi/software/Qt5.8/5.8/gcc_64/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -198,19 +199,20 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 thrift-server" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 thrift-server" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="thrift-server/fast">
-         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/thrift-server" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server" />
+         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/thrift-server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/mi/software/Qt5.8/5.8/gcc_64/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -221,10 +223,10 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 thrift-server/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 thrift-server/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="thrift-client">
@@ -294,91 +296,69 @@
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/ComDocIO.cpp">
          <Option target="mds"/>
+         <Option target="thrift-server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/JavaApi.cpp">
          <Option target="mds"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/export.cpp">
          <Option target="mds"/>
+         <Option target="thrift-server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/interface.cpp">
          <Option target="mds"/>
+         <Option target="thrift-server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/test/test.cpp">
          <Option target="test1"/>
       </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/MdsUtil.cpp">
+         <Option target="thrift-server"/>
+      </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/client.cpp">
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator.cpp">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.cpp">
          <Option target="thrift-server"/>
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator.h">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.h">
          <Option target="thrift-server"/>
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator_server.skeleton.cpp">
-         <Option target="thrift-server"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService.cpp">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.cpp">
          <Option target="thrift-server"/>
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService.h">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.h">
          <Option target="thrift-server"/>
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService_server.skeleton.cpp">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.cpp">
          <Option target="thrift-server"/>
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_constants.cpp">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.h">
          <Option target="thrift-server"/>
          <Option target="thrift-client"/>
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_constants.h">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/server.cpp">
          <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_types.cpp">
-         <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_types.h">
-         <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_constants.cpp">
-         <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_constants.h">
-         <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_types.cpp">
-         <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_types.h">
-         <Option target="thrift-server"/>
-         <Option target="thrift-client"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\thrift\client\" />
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\" />
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\" />
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
           <Option virtualFolder="CMake Files\thrift\client\" />
       </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/server/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\thrift\server\" />
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/server/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\thrift\server\" />
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\client\" />
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/test/CMakeLists.txt">
           <Option virtualFolder="CMake Files\test\" />

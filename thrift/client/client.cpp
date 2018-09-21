@@ -5,55 +5,25 @@
 #include <thrift/transport/TTransportUtils.h>
 #include <thrift/stdcxx.h>
 
-#include "../gen-cpp/Calculator.h"
+#include "../gen-cpp/SliceEntry.h"
 
 using namespace std;
 using namespace apache::thrift;
 using namespace apache::thrift::protocol;
 using namespace apache::thrift::transport;
 
-using namespace tutorial;
-using namespace shared;
+using namespace Slice;
 
 int main() {
-    stdcxx::shared_ptr<TTransport> socket(new TSocket("39.106.155.227", 443));
+    stdcxx::shared_ptr<TTransport> socket(new TSocket("localhost", 9090));
     stdcxx::shared_ptr<TTransport> transport(new TBufferedTransport(socket));
     stdcxx::shared_ptr<TProtocol> protocol(new TBinaryProtocol(transport));
-    CalculatorClient client(protocol);
+    SliceEntryClient client(protocol);
 
     try {
         transport->open();
-
-        client.ping();
-        cout << "ping()" << endl;
-
-        cout << "1 + 1 = " << client.add(1, 1) << endl;
-
-        Work work;
-        work.op = Operation::DIVIDE;
-        work.num1 = 1;
-        work.num2 = 0;
-
-        try {
-            client.calculate(1, work);
-            cout << "Whoa? We can divide by zero!" << endl;
-        } catch (InvalidOperation& io) {
-            cout << "InvalidOperation: " << io.why << endl;
-            // or using generated operator<<: cout << io << endl;
-            // or by using std::exception native method what(): cout << io.what() << endl;
-        }
-
-        work.op = Operation::SUBTRACT;
-        work.num1 = 15;
-        work.num2 = 10;
-        int32_t diff = client.calculate(1, work);
-        cout << "15 - 10 = " << diff << endl;
-
-        // Note that C++ uses return by reference for complex types to avoid
-        // costly copy construction
-        SharedStruct ss;
-        client.getStruct(ss, 1);
-        cout << "Received log: " << ss << endl;
+        Pointer a=client.RequstMDSFile("/home/mi/project/slicePro/sliceapi/data/2.mds");
+        cout<<a;
 
         transport->close();
     } catch (TException& tx) {

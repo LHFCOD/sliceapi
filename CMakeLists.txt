@@ -3,7 +3,7 @@ cmake_minimum_required (VERSION 2.8)
 # 项目信息
 project (sliceapi)
 add_subdirectory("${PROJECT_SOURCE_DIR}/test")
-add_subdirectory("${PROJECT_SOURCE_DIR}/thrift/server")
+add_subdirectory("${PROJECT_SOURCE_DIR}/thrift")
 add_subdirectory("${PROJECT_SOURCE_DIR}/thrift/client")
 
 # 查找当前目录下的所有源文件
@@ -31,6 +31,8 @@ ELSEIF (CMAKE_SYSTEM_NAME MATCHES "Linux")
 ENDIF ()
 link_directories(${QT_LIB})
 add_compile_options(-std=c++0x -fPIC)
+set(CMAKE_LINKER_FLAGS "-static -pthread -lrt -ldl")
+
 # 指定生成目标
 set(TARGET mds)
 add_library(${TARGET} SHARED ${DIR_SRCS} ${INC_ALL})
@@ -41,3 +43,5 @@ set(CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/deploy")
 install(TARGETS ${TARGET} RUNTIME DESTINATION bin
         LIBRARY DESTINATION bin)
 set_target_properties(${TARGET} PROPERTIES INSTALL_RPATH ${QT_LIB})
+SET_TARGET_PROPERTIES (${TARGET} PROPERTIES LINK_SEARCH_START_STATIC 1)
+SET_TARGET_PROPERTIES (${TARGET} PROPERTIES LINK_SEARCH_END_STATIC 1)

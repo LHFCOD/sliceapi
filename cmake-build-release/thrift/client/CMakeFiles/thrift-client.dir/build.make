@@ -81,199 +81,95 @@ thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o.provides: thrift/client/
 thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o
 
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o: ../thrift/gen-cpp/Calculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator.cpp
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o: ../thrift/gen-cpp/slice_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.cpp
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.i
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.i"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.i
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/Calculator.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.s
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.s"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.s
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.requires:
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.requires:
 
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.requires
+.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.requires
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.provides
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.requires
+	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.provides.build
+.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.provides
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o
-
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o: ../thrift/gen-cpp/tutorial_constants.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_constants.cpp
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_constants.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.i
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_constants.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.s
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.requires:
-
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.requires
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.provides
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o
 
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o: ../thrift/gen-cpp/tutorial_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_types.cpp
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o: ../thrift/gen-cpp/slice_constants.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.cpp
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_types.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.i
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.i"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.i
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/tutorial_types.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.s
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.s"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.s
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.requires:
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.requires:
 
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.requires
+.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.requires
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.provides
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.requires
+	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.provides.build
+.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.provides
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o
-
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o: ../thrift/gen-cpp/shared_constants.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_constants.cpp
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_constants.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.i
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_constants.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.s
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.requires:
-
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.requires
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.provides
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o
 
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o: ../thrift/gen-cpp/SharedService_server.skeleton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService_server.skeleton.cpp
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o: ../thrift/gen-cpp/SliceEntry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.cpp
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService_server.skeleton.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.i
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.i"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.i
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService_server.skeleton.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.s
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.s"
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.s
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.requires:
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.requires:
 
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.requires
+.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.requires
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.provides
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.requires
+	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.provides.build
+.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.provides
 
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o
-
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o: ../thrift/gen-cpp/SharedService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService.cpp
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.i
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SharedService.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.s
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.requires:
-
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.requires
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.provides
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o
-
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o: thrift/client/CMakeFiles/thrift-client.dir/flags.make
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o: ../thrift/gen-cpp/shared_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o -c /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_types.cpp
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.i"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_types.cpp > CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.i
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.s"
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mi/project/slicePro/sliceapi/thrift/gen-cpp/shared_types.cpp -o CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.s
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.requires:
-
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.requires
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.provides: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.requires
-	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.provides.build
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.provides
-
-thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o
+thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.provides.build: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o
 
 
 # Object files for target thrift-client
 thrift__client_OBJECTS = \
 "CMakeFiles/thrift-client.dir/client.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o" \
-"CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o"
+"CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o" \
+"CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o" \
+"CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o"
 
 # External object files for target thrift-client
 thrift__client_EXTERNAL_OBJECTS =
 
 thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o
-thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o
+thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o
+thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o
+thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o
 thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/build.make
 thrift/client/thrift-client: thrift/client/CMakeFiles/thrift-client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable thrift-client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable thrift-client"
 	cd /home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/thrift-client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -282,13 +178,9 @@ thrift/client/CMakeFiles/thrift-client.dir/build: thrift/client/thrift-client
 .PHONY : thrift/client/CMakeFiles/thrift-client.dir/build
 
 thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/Calculator.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_constants.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/tutorial_types.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_constants.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService_server.skeleton.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SharedService.cpp.o.requires
-thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/shared_types.cpp.o.requires
+thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o.requires
+thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o.requires
+thrift/client/CMakeFiles/thrift-client.dir/requires: thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o.requires
 
 .PHONY : thrift/client/CMakeFiles/thrift-client.dir/requires
 

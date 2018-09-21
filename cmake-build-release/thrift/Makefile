@@ -89,16 +89,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : edit_cache/fast
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -111,16 +111,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : install/local/fast
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,46 +155,208 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-thrift/CMakeFiles/MyThrift.dir/rule:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 thrift/CMakeFiles/MyThrift.dir/rule
-.PHONY : thrift/CMakeFiles/MyThrift.dir/rule
+thrift/CMakeFiles/thrift-server.dir/rule:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 thrift/CMakeFiles/thrift-server.dir/rule
+.PHONY : thrift/CMakeFiles/thrift-server.dir/rule
 
 # Convenience name for target.
-MyThrift: thrift/CMakeFiles/MyThrift.dir/rule
+thrift-server: thrift/CMakeFiles/thrift-server.dir/rule
 
-.PHONY : MyThrift
+.PHONY : thrift-server
 
 # fast build rule for target.
-MyThrift/fast:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/build
-.PHONY : MyThrift/fast
+thrift-server/fast:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/build
+.PHONY : thrift-server/fast
 
-client.o: client.cpp.o
+MdsUtil.o: MdsUtil.cpp.o
 
-.PHONY : client.o
+.PHONY : MdsUtil.o
 
 # target to build an object file
-client.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/client.cpp.o
-.PHONY : client.cpp.o
+MdsUtil.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/MdsUtil.cpp.o
+.PHONY : MdsUtil.cpp.o
 
-client.i: client.cpp.i
+MdsUtil.i: MdsUtil.cpp.i
 
-.PHONY : client.i
+.PHONY : MdsUtil.i
 
 # target to preprocess a source file
-client.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/client.cpp.i
-.PHONY : client.cpp.i
+MdsUtil.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/MdsUtil.cpp.i
+.PHONY : MdsUtil.cpp.i
 
-client.s: client.cpp.s
+MdsUtil.s: MdsUtil.cpp.s
 
-.PHONY : client.s
+.PHONY : MdsUtil.s
 
 # target to generate assembly for a file
-client.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/client.cpp.s
-.PHONY : client.cpp.s
+MdsUtil.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/MdsUtil.cpp.s
+.PHONY : MdsUtil.cpp.s
+
+__/source/ComDocIO.o: __/source/ComDocIO.cpp.o
+
+.PHONY : __/source/ComDocIO.o
+
+# target to build an object file
+__/source/ComDocIO.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/ComDocIO.cpp.o
+.PHONY : __/source/ComDocIO.cpp.o
+
+__/source/ComDocIO.i: __/source/ComDocIO.cpp.i
+
+.PHONY : __/source/ComDocIO.i
+
+# target to preprocess a source file
+__/source/ComDocIO.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/ComDocIO.cpp.i
+.PHONY : __/source/ComDocIO.cpp.i
+
+__/source/ComDocIO.s: __/source/ComDocIO.cpp.s
+
+.PHONY : __/source/ComDocIO.s
+
+# target to generate assembly for a file
+__/source/ComDocIO.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/ComDocIO.cpp.s
+.PHONY : __/source/ComDocIO.cpp.s
+
+__/source/export.o: __/source/export.cpp.o
+
+.PHONY : __/source/export.o
+
+# target to build an object file
+__/source/export.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/export.cpp.o
+.PHONY : __/source/export.cpp.o
+
+__/source/export.i: __/source/export.cpp.i
+
+.PHONY : __/source/export.i
+
+# target to preprocess a source file
+__/source/export.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/export.cpp.i
+.PHONY : __/source/export.cpp.i
+
+__/source/export.s: __/source/export.cpp.s
+
+.PHONY : __/source/export.s
+
+# target to generate assembly for a file
+__/source/export.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/export.cpp.s
+.PHONY : __/source/export.cpp.s
+
+__/source/interface.o: __/source/interface.cpp.o
+
+.PHONY : __/source/interface.o
+
+# target to build an object file
+__/source/interface.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/interface.cpp.o
+.PHONY : __/source/interface.cpp.o
+
+__/source/interface.i: __/source/interface.cpp.i
+
+.PHONY : __/source/interface.i
+
+# target to preprocess a source file
+__/source/interface.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/interface.cpp.i
+.PHONY : __/source/interface.cpp.i
+
+__/source/interface.s: __/source/interface.cpp.s
+
+.PHONY : __/source/interface.s
+
+# target to generate assembly for a file
+__/source/interface.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/__/source/interface.cpp.s
+.PHONY : __/source/interface.cpp.s
+
+gen-cpp/SliceEntry.o: gen-cpp/SliceEntry.cpp.o
+
+.PHONY : gen-cpp/SliceEntry.o
+
+# target to build an object file
+gen-cpp/SliceEntry.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/SliceEntry.cpp.o
+.PHONY : gen-cpp/SliceEntry.cpp.o
+
+gen-cpp/SliceEntry.i: gen-cpp/SliceEntry.cpp.i
+
+.PHONY : gen-cpp/SliceEntry.i
+
+# target to preprocess a source file
+gen-cpp/SliceEntry.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/SliceEntry.cpp.i
+.PHONY : gen-cpp/SliceEntry.cpp.i
+
+gen-cpp/SliceEntry.s: gen-cpp/SliceEntry.cpp.s
+
+.PHONY : gen-cpp/SliceEntry.s
+
+# target to generate assembly for a file
+gen-cpp/SliceEntry.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/SliceEntry.cpp.s
+.PHONY : gen-cpp/SliceEntry.cpp.s
+
+gen-cpp/slice_constants.o: gen-cpp/slice_constants.cpp.o
+
+.PHONY : gen-cpp/slice_constants.o
+
+# target to build an object file
+gen-cpp/slice_constants.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/slice_constants.cpp.o
+.PHONY : gen-cpp/slice_constants.cpp.o
+
+gen-cpp/slice_constants.i: gen-cpp/slice_constants.cpp.i
+
+.PHONY : gen-cpp/slice_constants.i
+
+# target to preprocess a source file
+gen-cpp/slice_constants.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/slice_constants.cpp.i
+.PHONY : gen-cpp/slice_constants.cpp.i
+
+gen-cpp/slice_constants.s: gen-cpp/slice_constants.cpp.s
+
+.PHONY : gen-cpp/slice_constants.s
+
+# target to generate assembly for a file
+gen-cpp/slice_constants.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/slice_constants.cpp.s
+.PHONY : gen-cpp/slice_constants.cpp.s
+
+gen-cpp/slice_types.o: gen-cpp/slice_types.cpp.o
+
+.PHONY : gen-cpp/slice_types.o
+
+# target to build an object file
+gen-cpp/slice_types.cpp.o:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/slice_types.cpp.o
+.PHONY : gen-cpp/slice_types.cpp.o
+
+gen-cpp/slice_types.i: gen-cpp/slice_types.cpp.i
+
+.PHONY : gen-cpp/slice_types.i
+
+# target to preprocess a source file
+gen-cpp/slice_types.cpp.i:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/slice_types.cpp.i
+.PHONY : gen-cpp/slice_types.cpp.i
+
+gen-cpp/slice_types.s: gen-cpp/slice_types.cpp.s
+
+.PHONY : gen-cpp/slice_types.s
+
+# target to generate assembly for a file
+gen-cpp/slice_types.cpp.s:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/gen-cpp/slice_types.cpp.s
+.PHONY : gen-cpp/slice_types.cpp.s
 
 server.o: server.cpp.o
 
@@ -202,7 +364,7 @@ server.o: server.cpp.o
 
 # target to build an object file
 server.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/server.cpp.o
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/server.cpp.o
 .PHONY : server.cpp.o
 
 server.i: server.cpp.i
@@ -211,7 +373,7 @@ server.i: server.cpp.i
 
 # target to preprocess a source file
 server.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/server.cpp.i
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/server.cpp.i
 .PHONY : server.cpp.i
 
 server.s: server.cpp.s
@@ -220,7 +382,7 @@ server.s: server.cpp.s
 
 # target to generate assembly for a file
 server.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/MyThrift.dir/build.make thrift/CMakeFiles/MyThrift.dir/server.cpp.s
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/server.cpp.s
 .PHONY : server.cpp.s
 
 # Help Target
@@ -232,13 +394,31 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MyThrift"
-	@echo "... edit_cache"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... client.o"
-	@echo "... client.i"
-	@echo "... client.s"
+	@echo "... install/strip"
+	@echo "... thrift-server"
+	@echo "... edit_cache"
+	@echo "... MdsUtil.o"
+	@echo "... MdsUtil.i"
+	@echo "... MdsUtil.s"
+	@echo "... __/source/ComDocIO.o"
+	@echo "... __/source/ComDocIO.i"
+	@echo "... __/source/ComDocIO.s"
+	@echo "... __/source/export.o"
+	@echo "... __/source/export.i"
+	@echo "... __/source/export.s"
+	@echo "... __/source/interface.o"
+	@echo "... __/source/interface.i"
+	@echo "... __/source/interface.s"
+	@echo "... gen-cpp/SliceEntry.o"
+	@echo "... gen-cpp/SliceEntry.i"
+	@echo "... gen-cpp/SliceEntry.s"
+	@echo "... gen-cpp/slice_constants.o"
+	@echo "... gen-cpp/slice_constants.i"
+	@echo "... gen-cpp/slice_constants.s"
+	@echo "... gen-cpp/slice_types.o"
+	@echo "... gen-cpp/slice_types.i"
+	@echo "... gen-cpp/slice_types.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

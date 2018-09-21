@@ -152,57 +152,57 @@ clean: test/CMakeFiles/test1.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory thrift/server
+# Directory level rules for directory thrift
 
 # Convenience name for "all" pass in the directory.
-thrift/server/all: thrift/server/CMakeFiles/thrift-server.dir/all
+thrift/all: thrift/CMakeFiles/thrift-server.dir/all
 
-.PHONY : thrift/server/all
+.PHONY : thrift/all
 
 # Convenience name for "clean" pass in the directory.
-thrift/server/clean: thrift/server/CMakeFiles/thrift-server.dir/clean
+thrift/clean: thrift/CMakeFiles/thrift-server.dir/clean
 
-.PHONY : thrift/server/clean
+.PHONY : thrift/clean
 
 # Convenience name for "preinstall" pass in the directory.
-thrift/server/preinstall:
+thrift/preinstall:
 
-.PHONY : thrift/server/preinstall
+.PHONY : thrift/preinstall
 
 #=============================================================================
-# Target rules for target thrift/server/CMakeFiles/thrift-server.dir
+# Target rules for target thrift/CMakeFiles/thrift-server.dir
 
 # All Build rule for target.
-thrift/server/CMakeFiles/thrift-server.dir/all:
-	$(MAKE) -f thrift/server/CMakeFiles/thrift-server.dir/build.make thrift/server/CMakeFiles/thrift-server.dir/depend
-	$(MAKE) -f thrift/server/CMakeFiles/thrift-server.dir/build.make thrift/server/CMakeFiles/thrift-server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25 "Built target thrift-server"
-.PHONY : thrift/server/CMakeFiles/thrift-server.dir/all
+thrift/CMakeFiles/thrift-server.dir/all:
+	$(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/depend
+	$(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21 "Built target thrift-server"
+.PHONY : thrift/CMakeFiles/thrift-server.dir/all
 
 # Include target in all.
-all: thrift/server/CMakeFiles/thrift-server.dir/all
+all: thrift/CMakeFiles/thrift-server.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-thrift/server/CMakeFiles/thrift-server.dir/rule: cmake_check_build_system
+thrift/CMakeFiles/thrift-server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 thrift/server/CMakeFiles/thrift-server.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 thrift/CMakeFiles/thrift-server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles 0
-.PHONY : thrift/server/CMakeFiles/thrift-server.dir/rule
+.PHONY : thrift/CMakeFiles/thrift-server.dir/rule
 
 # Convenience name for target.
-thrift-server: thrift/server/CMakeFiles/thrift-server.dir/rule
+thrift-server: thrift/CMakeFiles/thrift-server.dir/rule
 
 .PHONY : thrift-server
 
 # clean rule for target.
-thrift/server/CMakeFiles/thrift-server.dir/clean:
-	$(MAKE) -f thrift/server/CMakeFiles/thrift-server.dir/build.make thrift/server/CMakeFiles/thrift-server.dir/clean
-.PHONY : thrift/server/CMakeFiles/thrift-server.dir/clean
+thrift/CMakeFiles/thrift-server.dir/clean:
+	$(MAKE) -f thrift/CMakeFiles/thrift-server.dir/build.make thrift/CMakeFiles/thrift-server.dir/clean
+.PHONY : thrift/CMakeFiles/thrift-server.dir/clean
 
 # clean rule for target.
-clean: thrift/server/CMakeFiles/thrift-server.dir/clean
+clean: thrift/CMakeFiles/thrift-server.dir/clean
 
 .PHONY : clean
 
@@ -231,7 +231,7 @@ thrift/client/preinstall:
 thrift/client/CMakeFiles/thrift-client.dir/all:
 	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/depend
 	$(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16 "Built target thrift-client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles --progress-num=8,9,10,11,12 "Built target thrift-client"
 .PHONY : thrift/client/CMakeFiles/thrift-client.dir/all
 
 # Include target in all.
@@ -241,7 +241,7 @@ all: thrift/client/CMakeFiles/thrift-client.dir/all
 
 # Build rule for subdir invocation for target.
 thrift/client/CMakeFiles/thrift-client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 thrift/client/CMakeFiles/thrift-client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles 0
 .PHONY : thrift/client/CMakeFiles/thrift-client.dir/rule
