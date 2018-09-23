@@ -1,0 +1,7 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/mi/project/slicePro/sliceapi
+-- ./source/MicroComDocIO.cpp./source/export.cpp./source/Utils.cpp./source/ComDocIO.cpp./source/interface.cpp./test.cpp
+-- ./source/export.cpp./source/Utils.cpp./source/ComDocIO.cpp./source/interface.cpp./test.cpp
+-- /home/mi/software/java/jdk1.8.0_161//include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mi/project/slicePro/sliceapi/cmake-build-release

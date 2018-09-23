@@ -1,0 +1,7 @@
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/install.dir
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/list_install_components.dir
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/mds.dir
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/install/local.dir
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/install/strip.dir
+/home/mi/project/slicePro/sliceapi/cmake-build-release/CMakeFiles/edit_cache.dir

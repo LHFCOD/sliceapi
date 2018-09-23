@@ -1,7 +1,7 @@
 #include "../include/export.h"
 using namespace TileImage;
 MDSFile *file;
-void ReadMDSFile(QString _RootDir)
+void ReadMDSFile(string _RootDir)
 {
 	file =new MDSFile(_RootDir);
 }

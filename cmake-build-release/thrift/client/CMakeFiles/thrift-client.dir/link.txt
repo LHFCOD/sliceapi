@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/thrift-client.dir/client.cpp.o CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o  -o thrift-client -rdynamic -lthrift 

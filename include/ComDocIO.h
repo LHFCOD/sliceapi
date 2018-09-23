@@ -15,6 +15,10 @@ using namespace BaseDataStruct;
 
 #define MAKE_UI32(n) n##u
 #define MAKE_UI64(n) n##ull
+
+#include <boost/iostreams/device/mapped_file.hpp>
+using namespace std;
+using namespace boost::iostreams;
 namespace ComDoc
 {
 	struct Header
@@ -52,25 +56,25 @@ namespace ComDoc
 	{
 	public:
 		ComDocIO();
-		ComDocIO(QString FilePath);
+		ComDocIO(string FilePath);
 		~ComDocIO();
 	public:
 		Header m_Header;
-		byte_t* dat;//ÎÄ¼þÄÚ´æÊý¾ÝÖ¸Õë
-		QFile file;//ÎÄ¼þ¶ÔÏó
-		byte_t* ptr;//µ±Ç°ÎÄ¼þÖ¸Õë
+		const char* dat;//ÎÄ¼þÄÚ´æÊý¾ÝÖ¸Õë
+        mapped_file_source file;//ÎÄ¼þ¶ÔÏó
+		char* ptr;//µ±Ç°ÎÄ¼þÖ¸Õë
 
 		QVector<i32_t> ShortSreamCon;
 		QVector<i32_t> ShortSectAllo;
 		QVector<i32_t> SATAllo;
 		void ReadHeader();
-		void ReadFile(QString FilePath);
+		void ReadFile(string FilePath);
 		Directory ReadDirectory(ui32_t DID);
 		inline i32_t FindNextSID(i32_t SID);
 		inline i32_t FindSID(i32_t SID, ui32_t Offset);
 		void ConfigureShorStream();
 		inline i32_t FindNextShortSID(i32_t SID);
-		inline byte_t* GetAddressFromShortSID(i32_t SID);
+		inline char* GetAddressFromShortSID(i32_t SID);
 		inline byte_t* ReadStreamFromSID(i32_t SID, ui64_t len);
 		inline byte_t*  ReadShortStreamFromSID(i32_t SID, ui64_t len);///
 
@@ -80,7 +84,7 @@ namespace ComDoc
 		void SerchTree(ui32_t RootDID, QVector<Directory> *vec);//²éÕÒºìºÚÊ÷
 		void ConfigureSAT();
 		void SerchSAT(i32_t SID);
-		FileBlock* ReadFromPath(QString path);
+		FileBlock* ReadFromPath(string path);
 		Directory FindDirectoryFromWName(i32_t RootDID, std::wstring name);
 		Directory FindDirectoryFromName(i32_t RootDID, std::string name);
 		inline int CompareWstring(std::wstring str1, std::wstring str2) {
@@ -90,8 +94,8 @@ namespace ComDoc
 				return 1;
 			else if (str1.size() == str2.size())
 			{
-				std::transform(str1.begin(), str1.end(), str1.begin(), toupper);
-				std::transform(str2.begin(), str2.end(), str2.begin(), toupper);
+				std::transform(str1.begin(), str1.end(), str1.begin(), static_cast<int(*)(int)>(std::toupper));
+				std::transform(str2.begin(), str2.end(), str2.begin(), static_cast<int(*)(int)>(std::toupper));
 				if (str1 < str2)
 					return -1;
 				else if (str1 > str2)
@@ -107,8 +111,8 @@ namespace ComDoc
 				return 1;
 			else if (str1.size() == str2.size())
 			{
-				std::transform(str1.begin(), str1.end(), str1.begin(), toupper);
-				std::transform(str2.begin(), str2.end(), str2.begin(), toupper);
+				std::transform(str1.begin(), str1.end(), str1.begin(), static_cast<int(*)(int)>(std::toupper));
+				std::transform(str2.begin(), str2.end(), str2.begin(), static_cast<int(*)(int)>(std::toupper));
 				if (str1 < str2)
 					return -1;
 				else if (str1 > str2)

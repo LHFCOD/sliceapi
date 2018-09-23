@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/test1.dir/test.cpp.o  -o test1  -L/home/mi/software/Qt5.8/5.8/gcc_64/lib -rdynamic ../libmds.so -lQt5Gui -lQt5Core -lQt5Xml -Wl,-rpath,/home/mi/software/Qt5.8/5.8/gcc_64/lib:/home/mi/project/slicePro/sliceapi/cmake-build-release 

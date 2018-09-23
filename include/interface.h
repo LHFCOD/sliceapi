@@ -3,6 +3,8 @@
 #include "QtCore/QtCore"
 #include "QtGui/QImage"
 #include "QtGui/QPainter"
+#include <pugixml.hpp>
+
 //#include "MicroComDocIO.h"
 //using namespace MicroComDoc;
 #include "ComDocIO.h"
@@ -14,7 +16,7 @@ using namespace ComDoc;
 #else
 #define INTERFACE _declspec(dllimport)
 #endif
-
+using namespace std;
 namespace TileImage
 {
 	class ImageInfo
@@ -31,7 +33,7 @@ namespace TileImage
 	class  LayerProperty
 	{
 	public:
-		QString folderName;
+		string folderName;
 		float scaleVal;
 		int rowCount;
 		int colCount;
@@ -46,11 +48,11 @@ namespace TileImage
 		
 		ComDocIO *io;
 		ImageInfo info;
-		QMap<int, LayerProperty> LayerMap;
+		std::map<int, LayerProperty> LayerMap;
 		QImage *minLevelImage;
 		FileBlock *thumbnailImage=nullptr;
 	public:
-		MDSFile(QString _RootDir);
+		MDSFile(string _RootDir);
 		void GetImageInfo();
 		void GetLayerProperty();
 		FileBlock* GetTileData(int Level, int x, int y);
