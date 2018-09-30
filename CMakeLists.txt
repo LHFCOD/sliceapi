@@ -9,11 +9,12 @@ aux_source_directory(./source DIR_SRCS)
 aux_source_directory(. DIR_SRCS)
 list(REMOVE_ITEM DIR_SRCS "./source/MicroComDocIO.cpp") 
 aux_source_directory($ENV{XML} DIR_SRCS)
+list(APPEND DIR_SRCS "$ENV{BOOST_ROOT}/libs/iostreams/src/mapped_file.cpp") 
+
 include_directories($ENV{BOOST_ROOT})
 include_directories($ENV{XML})
 include_directories($ENV{CIMG})
 # display include file in project
-FILE(GLOB_RECURSE INC_ALL "./include/*.h")
 # 平台判断
 IF (CMAKE_SYSTEM_NAME MATCHES "Windows")                                          	
 	include_directories(${JAVA_INC}/win32)
@@ -22,15 +23,13 @@ ELSEIF (CMAKE_SYSTEM_NAME MATCHES "Linux")
         include_directories(${JAVA_INC}/linux)
         #	set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./target/linux")
 ENDIF ()
-link_directories(${QT_LIB})
 add_compile_options(-std=c++11 -fPIC)
 # 指定生成目标
 set(TARGET mds)
-add_executable(${TARGET} ${DIR_SRCS} ${INC_ALL} source/Utils.cpp "/home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp")
+add_executable(${TARGET} ${DIR_SRCS})
 
 target_link_libraries(${TARGET} pthread X11 jpeg)
 
 set(CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/deploy")
 install(TARGETS ${TARGET} RUNTIME DESTINATION bin
         LIBRARY DESTINATION bin)
-# set_target_properties(${TARGET} PROPERTIES INSTALL_RPATH ${QT_LIB})

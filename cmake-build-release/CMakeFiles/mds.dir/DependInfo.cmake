@@ -16,11 +16,10 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/mi/software/Qt5.8/5.8/gcc_64/include"
-  "/home/mi/software/java/jdk1.8.0_161/include"
   "/home/mi/software/boost_1_68_0"
   "/home/mi/software/pugixml/src"
-  "/home/mi/software/java/jdk1.8.0_161/include/linux"
+  "/home/mi/software/CImge"
+  "/linux"
   )
 
 # Targets to which this target links.

@@ -42,7 +42,10 @@
             "label": "make-release",
             "type": "shell",
             "command":"make",
-            "dependsOn":"cmake-release"
+            "dependsOn":"cmake-release",
+            "options": {
+                "cwd": "cmake-build-release"
+            }
         }
     ]
 }

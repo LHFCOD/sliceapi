@@ -54,11 +54,10 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/mi/software/Qt5.8/5.8/gcc_64/include" />
+            <Add directory="/home/mi/software/CImge" />
             <Add directory="/home/mi/software/boost_1_68_0" />
-            <Add directory="/home/mi/software/java/jdk1.8.0_161/include" />
-            <Add directory="/home/mi/software/java/jdk1.8.0_161/include/linux" />
             <Add directory="/home/mi/software/pugixml/src" />
+            <Add directory="/linux" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -82,11 +81,10 @@
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/mi/software/Qt5.8/5.8/gcc_64/include" />
+            <Add directory="/home/mi/software/CImge" />
             <Add directory="/home/mi/software/boost_1_68_0" />
-            <Add directory="/home/mi/software/java/jdk1.8.0_161/include" />
-            <Add directory="/home/mi/software/java/jdk1.8.0_161/include/linux" />
             <Add directory="/home/mi/software/pugixml/src" />
+            <Add directory="/linux" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
@@ -134,24 +132,6 @@
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/include/BaseDataStruct.h">
-         <Option target="mds"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/include/ComDocIO.h">
-         <Option target="mds"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/include/MicroComDocIO.h">
-         <Option target="mds"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/include/Utils.h">
-         <Option target="mds"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/include/export.h">
-         <Option target="mds"/>
-      </Unit>
-      <Unit filename="/home/mi/project/slicePro/sliceapi/include/interface.h">
-         <Option target="mds"/>
-      </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/ComDocIO.cpp">
          <Option target="mds"/>
       </Unit>
