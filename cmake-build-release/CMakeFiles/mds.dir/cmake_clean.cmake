@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mds.dir/source/interface.cpp.o"
   "CMakeFiles/mds.dir/test.cpp.o"
   "CMakeFiles/mds.dir/home/mi/software/pugixml/src/pugixml.cpp.o"
-  "CMakeFiles/mds.dir/home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.o"
+  "CMakeFiles/mds.dir/home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.o"
   "mds.pdb"
   "mds"
 )

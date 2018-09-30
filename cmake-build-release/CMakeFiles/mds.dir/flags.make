@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -std=c++11 -fPIC
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mi/software/boost_1_68_0 -I/home/mi/software/pugixml/src -I/home/mi/software/CImge -I/linux 
+CXX_INCLUDES = -I/home/mi/software/boost_1_60_0 -I/home/mi/software/pugixml/src -I/home/mi/software/CImge -I/linux 
 

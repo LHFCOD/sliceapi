@@ -184,10 +184,10 @@ server_BINARY_DIR:STATIC=/home/mi/project/slicePro/sliceapi/cmake-build-release/
 server_SOURCE_DIR:STATIC=/home/mi/project/slicePro/sliceapi/thrift
 
 //Value Computed by CMake
-sliceapi_BINARY_DIR:STATIC=/home/mi/project/slicePro/sliceapi/cmake-build-release
+sliceapi_BINARY_DIR:STATIC=/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client
 
 //Value Computed by CMake
-sliceapi_SOURCE_DIR:STATIC=/home/mi/project/slicePro/sliceapi
+sliceapi_SOURCE_DIR:STATIC=/home/mi/project/slicePro/sliceapi/thrift/client
 
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/mi/project/slicePro/sliceapi/cmake-build-release/test
@@ -294,7 +294,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -167,32 +167,58 @@ mds/fast:
 	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/build
 .PHONY : mds/fast
 
-home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.o: home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.o
+#=============================================================================
+# Target rules for targets named server
 
-.PHONY : home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.o
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f thrift/CMakeFiles/server.dir/build.make thrift/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.o: home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.o
+
+.PHONY : home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.o
 
 # target to build an object file
-home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.o:
-	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.o
-.PHONY : home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.o
+home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.o:
+	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.o
+.PHONY : home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.o
 
-home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.i: home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.i
+home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.i: home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.i
 
-.PHONY : home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.i
+.PHONY : home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.i
 
 # target to preprocess a source file
-home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.i:
-	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.i
-.PHONY : home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.i
+home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.i:
+	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.i
+.PHONY : home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.i
 
-home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.s: home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.s
+home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.s: home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.s
 
-.PHONY : home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.s
+.PHONY : home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.s
 
 # target to generate assembly for a file
-home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.s:
-	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.s
-.PHONY : home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp.s
+home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.s:
+	$(MAKE) -f CMakeFiles/mds.dir/build.make CMakeFiles/mds.dir/home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.s
+.PHONY : home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp.s
 
 home/mi/software/pugixml/src/pugixml.o: home/mi/software/pugixml/src/pugixml.cpp.o
 
@@ -369,9 +395,11 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... edit_cache"
-	@echo "... home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.o"
-	@echo "... home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.i"
-	@echo "... home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.s"
+	@echo "... server"
+	@echo "... client"
+	@echo "... home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.o"
+	@echo "... home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.i"
+	@echo "... home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.s"
 	@echo "... home/mi/software/pugixml/src/pugixml.o"
 	@echo "... home/mi/software/pugixml/src/pugixml.i"
 	@echo "... home/mi/software/pugixml/src/pugixml.s"

@@ -6,7 +6,7 @@
         "cwd": "",
         "env": {
             "XML":"/home/mi/software/pugixml/src",
-            "BOOST_ROOT":"/home/mi/software/boost_1_68_0",
+            "BOOST_ROOT":"/home/mi/software/boost_1_60_0",
             "CIMG":"/home/mi/software/CImge"
         }
     },

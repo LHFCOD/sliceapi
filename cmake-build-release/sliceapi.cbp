@@ -5,7 +5,7 @@
       <Option title="sliceapi" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\thrift\;CMake Files\thrift\client\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release" />
@@ -55,7 +55,7 @@
          <Option compiler="gcc" />
          <Compiler>
             <Add directory="/home/mi/software/CImge" />
-            <Add directory="/home/mi/software/boost_1_68_0" />
+            <Add directory="/home/mi/software/boost_1_60_0" />
             <Add directory="/home/mi/software/pugixml/src" />
             <Add directory="/linux" />
             <Add directory="/usr/include" />
@@ -82,7 +82,7 @@
          <Option compiler="gcc" />
          <Compiler>
             <Add directory="/home/mi/software/CImge" />
-            <Add directory="/home/mi/software/boost_1_68_0" />
+            <Add directory="/home/mi/software/boost_1_60_0" />
             <Add directory="/home/mi/software/pugixml/src" />
             <Add directory="/linux" />
             <Add directory="/usr/include" />
@@ -131,33 +131,176 @@
             <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="server">
+         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/mi/software/CImge" />
+            <Add directory="/home/mi/software/boost_1_60_0" />
+            <Add directory="/home/mi/software/pugixml/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 server" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="server/fast">
+         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/server" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/mi/software/CImge" />
+            <Add directory="/home/mi/software/boost_1_60_0" />
+            <Add directory="/home/mi/software/pugixml/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 server/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="client">
+         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/client" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/mi/software/boost_1_60_0" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 client" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="client/fast">
+         <Option output="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/client" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/mi/software/boost_1_60_0" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 client/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mi/project/slicePro/sliceapi/cmake-build-release/thrift/client/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       </Build>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/ComDocIO.cpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/Utils.cpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/export.cpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/source/interface.cpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/test.cpp">
          <Option target="mds"/>
       </Unit>
-      <Unit filename="/home/mi/software/boost_1_68_0/libs/iostreams/src/mapped_file.cpp">
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/SliceEntry_server.skeleton.cpp">
+         <Option target="server"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/client.cpp">
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.cpp">
+         <Option target="server"/>
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/SliceEntry.h">
+         <Option target="server"/>
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.cpp">
+         <Option target="server"/>
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_constants.h">
+         <Option target="server"/>
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.cpp">
+         <Option target="server"/>
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/gen-cpp/slice_types.h">
+         <Option target="server"/>
+         <Option target="client"/>
+      </Unit>
+      <Unit filename="/home/mi/software/boost_1_60_0/libs/iostreams/src/mapped_file.cpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/software/pugixml/src/pugixml.cpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/software/pugixml/src/pugixml.hpp">
          <Option target="mds"/>
+         <Option target="server"/>
       </Unit>
       <Unit filename="/home/mi/project/slicePro/sliceapi/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\" />
+      </Unit>
+      <Unit filename="/home/mi/project/slicePro/sliceapi/thrift/client/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\thrift\client\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

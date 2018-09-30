@@ -89,6 +89,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -110,17 +121,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,19 +155,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-thrift/client/CMakeFiles/thrift-client.dir/rule:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 thrift/client/CMakeFiles/thrift-client.dir/rule
-.PHONY : thrift/client/CMakeFiles/thrift-client.dir/rule
+thrift/client/CMakeFiles/client.dir/rule:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 thrift/client/CMakeFiles/client.dir/rule
+.PHONY : thrift/client/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
-thrift-client: thrift/client/CMakeFiles/thrift-client.dir/rule
+client: thrift/client/CMakeFiles/client.dir/rule
 
-.PHONY : thrift-client
+.PHONY : client
 
 # fast build rule for target.
-thrift-client/fast:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/build
-.PHONY : thrift-client/fast
+client/fast:
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 __/gen-cpp/SliceEntry.o: __/gen-cpp/SliceEntry.cpp.o
 
@@ -175,7 +175,7 @@ __/gen-cpp/SliceEntry.o: __/gen-cpp/SliceEntry.cpp.o
 
 # target to build an object file
 __/gen-cpp/SliceEntry.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.o
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/SliceEntry.cpp.o
 .PHONY : __/gen-cpp/SliceEntry.cpp.o
 
 __/gen-cpp/SliceEntry.i: __/gen-cpp/SliceEntry.cpp.i
@@ -184,7 +184,7 @@ __/gen-cpp/SliceEntry.i: __/gen-cpp/SliceEntry.cpp.i
 
 # target to preprocess a source file
 __/gen-cpp/SliceEntry.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.i
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/SliceEntry.cpp.i
 .PHONY : __/gen-cpp/SliceEntry.cpp.i
 
 __/gen-cpp/SliceEntry.s: __/gen-cpp/SliceEntry.cpp.s
@@ -193,7 +193,7 @@ __/gen-cpp/SliceEntry.s: __/gen-cpp/SliceEntry.cpp.s
 
 # target to generate assembly for a file
 __/gen-cpp/SliceEntry.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/SliceEntry.cpp.s
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/SliceEntry.cpp.s
 .PHONY : __/gen-cpp/SliceEntry.cpp.s
 
 __/gen-cpp/slice_constants.o: __/gen-cpp/slice_constants.cpp.o
@@ -202,7 +202,7 @@ __/gen-cpp/slice_constants.o: __/gen-cpp/slice_constants.cpp.o
 
 # target to build an object file
 __/gen-cpp/slice_constants.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.o
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/slice_constants.cpp.o
 .PHONY : __/gen-cpp/slice_constants.cpp.o
 
 __/gen-cpp/slice_constants.i: __/gen-cpp/slice_constants.cpp.i
@@ -211,7 +211,7 @@ __/gen-cpp/slice_constants.i: __/gen-cpp/slice_constants.cpp.i
 
 # target to preprocess a source file
 __/gen-cpp/slice_constants.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.i
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/slice_constants.cpp.i
 .PHONY : __/gen-cpp/slice_constants.cpp.i
 
 __/gen-cpp/slice_constants.s: __/gen-cpp/slice_constants.cpp.s
@@ -220,7 +220,7 @@ __/gen-cpp/slice_constants.s: __/gen-cpp/slice_constants.cpp.s
 
 # target to generate assembly for a file
 __/gen-cpp/slice_constants.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_constants.cpp.s
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/slice_constants.cpp.s
 .PHONY : __/gen-cpp/slice_constants.cpp.s
 
 __/gen-cpp/slice_types.o: __/gen-cpp/slice_types.cpp.o
@@ -229,7 +229,7 @@ __/gen-cpp/slice_types.o: __/gen-cpp/slice_types.cpp.o
 
 # target to build an object file
 __/gen-cpp/slice_types.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.o
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/slice_types.cpp.o
 .PHONY : __/gen-cpp/slice_types.cpp.o
 
 __/gen-cpp/slice_types.i: __/gen-cpp/slice_types.cpp.i
@@ -238,7 +238,7 @@ __/gen-cpp/slice_types.i: __/gen-cpp/slice_types.cpp.i
 
 # target to preprocess a source file
 __/gen-cpp/slice_types.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.i
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/slice_types.cpp.i
 .PHONY : __/gen-cpp/slice_types.cpp.i
 
 __/gen-cpp/slice_types.s: __/gen-cpp/slice_types.cpp.s
@@ -247,7 +247,7 @@ __/gen-cpp/slice_types.s: __/gen-cpp/slice_types.cpp.s
 
 # target to generate assembly for a file
 __/gen-cpp/slice_types.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/__/gen-cpp/slice_types.cpp.s
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/__/gen-cpp/slice_types.cpp.s
 .PHONY : __/gen-cpp/slice_types.cpp.s
 
 client.o: client.cpp.o
@@ -256,7 +256,7 @@ client.o: client.cpp.o
 
 # target to build an object file
 client.cpp.o:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/client.cpp.o
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -265,7 +265,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/client.cpp.i
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -274,7 +274,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/thrift-client.dir/build.make thrift/client/CMakeFiles/thrift-client.dir/client.cpp.s
+	cd /home/mi/project/slicePro/sliceapi/cmake-build-release && $(MAKE) -f thrift/client/CMakeFiles/client.dir/build.make thrift/client/CMakeFiles/client.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 # Help Target
@@ -286,10 +286,10 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... thrift-client"
+	@echo "... client"
+	@echo "... edit_cache"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... edit_cache"
 	@echo "... __/gen-cpp/SliceEntry.o"
 	@echo "... __/gen-cpp/SliceEntry.i"
 	@echo "... __/gen-cpp/SliceEntry.s"
