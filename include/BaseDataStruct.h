@@ -1,4 +1,5 @@
 #pragma once
+#include <stdlib.h>
 namespace BaseDataStruct
 {
 	typedef unsigned char byte_t;

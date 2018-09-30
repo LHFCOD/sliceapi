@@ -1,0 +1,48 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "",
+        "env": {
+            "XML":"/home/mi/software/pugixml/src",
+            "BOOST_ROOT":"/home/mi/software/boost_1_68_0",
+            "CIMG":"/home/mi/software/CImge"
+        }
+    },
+    "tasks": [
+        {
+            "label": "cmake-debug",
+            "type": "shell",
+            "command": "cmake -DCMAKE_BUILD_TYPE=Debug ..",
+            "group": "build",
+            "options": {
+                "cwd": "cmake-build-debug"
+            }
+        },
+        {
+            "label": "make-debug",
+            "type": "shell",
+            "command":"make",
+            "group": "build",
+            "dependsOn":"cmake-debug",
+            "options": {
+                "cwd": "cmake-build-debug"
+            }
+        },
+        {
+            "label": "cmake-release",
+            "type": "shell",
+            "command": "cmake -DCMAKE_BUILD_TYPE=Release ..",
+            "options": {
+                "cwd": "cmake-build-release"
+            }
+        },
+        {
+            "label": "make-release",
+            "type": "shell",
+            "command":"make",
+            "dependsOn":"cmake-release"
+        }
+    ]
+}

@@ -1,9 +1,9 @@
 #pragma once
-#include <QtCore/QtCore>
 #include "BaseDataStruct.h"
 using namespace BaseDataStruct;
 #include <iostream>
 #include <stdexcept>
+#include <map>
 /*È¡Êý¾Ý */
 #define get_data(ptr, off)  (((const byte_t *)ptr) + off)
 #define get_byte(ptr, off)  (*(const byte_t *)get_data(ptr, off))
@@ -60,13 +60,13 @@ namespace ComDoc
 		~ComDocIO();
 	public:
 		Header m_Header;
-		const char* dat;//ÎÄ¼þÄÚ´æÊý¾ÝÖ¸Õë
-        mapped_file_source file;//ÎÄ¼þ¶ÔÏó
-		char* ptr;//µ±Ç°ÎÄ¼þÖ¸Õë
+		const char* dat;
+        mapped_file_source file;
+		char* ptr;
 
-		QVector<i32_t> ShortSreamCon;
-		QVector<i32_t> ShortSectAllo;
-		QVector<i32_t> SATAllo;
+		vector<i32_t> ShortSreamCon;
+		vector<i32_t> ShortSectAllo;
+		vector<i32_t> SATAllo;
 		void ReadHeader();
 		void ReadFile(string FilePath);
 		Directory ReadDirectory(ui32_t DID);
@@ -78,10 +78,10 @@ namespace ComDoc
 		inline byte_t* ReadStreamFromSID(i32_t SID, ui64_t len);
 		inline byte_t*  ReadShortStreamFromSID(i32_t SID, ui64_t len);///
 
-		QMap<ui32_t, QVector<Directory>*> FilePool;//´æ·ÅÎÄ¼þ×éÖ¯½á¹¹
+		map<ui32_t, vector<Directory>*> FilePool;//´æ·ÅÎÄ¼þ×éÖ¯½á¹¹
 		i32_t FileCount = 0;//´æ·ÅÎÄ¼þÊýÁ¿
-		void CreateFilePool(ui32_t RootDID, QVector<Directory> *vec);
-		void SerchTree(ui32_t RootDID, QVector<Directory> *vec);//²éÕÒºìºÚÊ÷
+		void CreateFilePool(ui32_t RootDID, vector<Directory> *vec);
+		void SerchTree(ui32_t RootDID, vector<Directory> *vec);//²éÕÒºìºÚÊ÷
 		void ConfigureSAT();
 		void SerchSAT(i32_t SID);
 		FileBlock* ReadFromPath(string path);

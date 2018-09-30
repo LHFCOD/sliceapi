@@ -8,7 +8,7 @@
 
 extern "C"
 {
-	DLL_EXPORT void ReadMDSFile(QString _RootDir);
+	DLL_EXPORT void ReadMDSFile(string _RootDir);
 	DLL_EXPORT void ReleaseMDSFile();
 	DLL_EXPORT FileBlock* GetTileVirtualData(int Level,int x,int y);
 	DLL_EXPORT FileBlock* GetThumbnail(int height);
