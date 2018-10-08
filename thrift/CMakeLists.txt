@@ -6,9 +6,11 @@ project (sliceapi)
 # 查找当前目录下的所有源文件
 # 并将名称保存到 DIR_SRCS 变量
 aux_source_directory(../source DIR_SRCS)
+aux_source_directory(./gen-cpp DIR_SRCS)
+list(REMOVE_ITEM DIR_SRCS "./gen-cpp/SliceEntry_server.skeleton.cpp") 
 aux_source_directory(. DIR_SRCS)
-aux_source_directory(./gen-cpp/ DIR_SRCS)
 list(REMOVE_ITEM DIR_SRCS "../source/MicroComDocIO.cpp") 
+
 aux_source_directory($ENV{XML} DIR_SRCS)
 list(APPEND DIR_SRCS "$ENV{BOOST_ROOT}/libs/iostreams/src/mapped_file.cpp") 
 

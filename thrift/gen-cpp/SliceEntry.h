@@ -22,7 +22,8 @@ class SliceEntryIf {
  public:
   virtual ~SliceEntryIf() {}
   virtual Pointer RequstMDSFile(const std::string& filePath) = 0;
-  virtual void GetTileVirtualData(std::vector<int8_t> & _return, const int32_t Level, const int32_t x, const int32_t y) = 0;
+  virtual void GetTileVirtualData(std::vector<int8_t> & _return, const Pointer key, const int32_t Level, const int32_t x, const int32_t y) = 0;
+  virtual void GetSliceInfo(SliceInfo& _return, const Pointer key) = 0;
   virtual int32_t add(const int32_t a, const int32_t b) = 0;
 };
 
@@ -57,7 +58,10 @@ class SliceEntryNull : virtual public SliceEntryIf {
     Pointer _return = 0;
     return _return;
   }
-  void GetTileVirtualData(std::vector<int8_t> & /* _return */, const int32_t /* Level */, const int32_t /* x */, const int32_t /* y */) {
+  void GetTileVirtualData(std::vector<int8_t> & /* _return */, const Pointer /* key */, const int32_t /* Level */, const int32_t /* x */, const int32_t /* y */) {
+    return;
+  }
+  void GetSliceInfo(SliceInfo& /* _return */, const Pointer /* key */) {
     return;
   }
   int32_t add(const int32_t /* a */, const int32_t /* b */) {
@@ -171,7 +175,8 @@ class SliceEntry_RequstMDSFile_presult {
 };
 
 typedef struct _SliceEntry_GetTileVirtualData_args__isset {
-  _SliceEntry_GetTileVirtualData_args__isset() : Level(false), x(false), y(false) {}
+  _SliceEntry_GetTileVirtualData_args__isset() : key(false), Level(false), x(false), y(false) {}
+  bool key :1;
   bool Level :1;
   bool x :1;
   bool y :1;
@@ -182,15 +187,18 @@ class SliceEntry_GetTileVirtualData_args {
 
   SliceEntry_GetTileVirtualData_args(const SliceEntry_GetTileVirtualData_args&);
   SliceEntry_GetTileVirtualData_args& operator=(const SliceEntry_GetTileVirtualData_args&);
-  SliceEntry_GetTileVirtualData_args() : Level(0), x(0), y(0) {
+  SliceEntry_GetTileVirtualData_args() : key(0), Level(0), x(0), y(0) {
   }
 
   virtual ~SliceEntry_GetTileVirtualData_args() throw();
+  Pointer key;
   int32_t Level;
   int32_t x;
   int32_t y;
 
   _SliceEntry_GetTileVirtualData_args__isset __isset;
+
+  void __set_key(const Pointer val);
 
   void __set_Level(const int32_t val);
 
@@ -200,6 +208,8 @@ class SliceEntry_GetTileVirtualData_args {
 
   bool operator == (const SliceEntry_GetTileVirtualData_args & rhs) const
   {
+    if (!(key == rhs.key))
+      return false;
     if (!(Level == rhs.Level))
       return false;
     if (!(x == rhs.x))
@@ -225,6 +235,7 @@ class SliceEntry_GetTileVirtualData_pargs {
 
 
   virtual ~SliceEntry_GetTileVirtualData_pargs() throw();
+  const Pointer* key;
   const int32_t* Level;
   const int32_t* x;
   const int32_t* y;
@@ -283,6 +294,110 @@ class SliceEntry_GetTileVirtualData_presult {
   std::vector<int8_t> * success;
 
   _SliceEntry_GetTileVirtualData_presult__isset __isset;
+
+  uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+
+};
+
+typedef struct _SliceEntry_GetSliceInfo_args__isset {
+  _SliceEntry_GetSliceInfo_args__isset() : key(false) {}
+  bool key :1;
+} _SliceEntry_GetSliceInfo_args__isset;
+
+class SliceEntry_GetSliceInfo_args {
+ public:
+
+  SliceEntry_GetSliceInfo_args(const SliceEntry_GetSliceInfo_args&);
+  SliceEntry_GetSliceInfo_args& operator=(const SliceEntry_GetSliceInfo_args&);
+  SliceEntry_GetSliceInfo_args() : key(0) {
+  }
+
+  virtual ~SliceEntry_GetSliceInfo_args() throw();
+  Pointer key;
+
+  _SliceEntry_GetSliceInfo_args__isset __isset;
+
+  void __set_key(const Pointer val);
+
+  bool operator == (const SliceEntry_GetSliceInfo_args & rhs) const
+  {
+    if (!(key == rhs.key))
+      return false;
+    return true;
+  }
+  bool operator != (const SliceEntry_GetSliceInfo_args &rhs) const {
+    return !(*this == rhs);
+  }
+
+  bool operator < (const SliceEntry_GetSliceInfo_args & ) const;
+
+  uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+  uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+
+};
+
+
+class SliceEntry_GetSliceInfo_pargs {
+ public:
+
+
+  virtual ~SliceEntry_GetSliceInfo_pargs() throw();
+  const Pointer* key;
+
+  uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+
+};
+
+typedef struct _SliceEntry_GetSliceInfo_result__isset {
+  _SliceEntry_GetSliceInfo_result__isset() : success(false) {}
+  bool success :1;
+} _SliceEntry_GetSliceInfo_result__isset;
+
+class SliceEntry_GetSliceInfo_result {
+ public:
+
+  SliceEntry_GetSliceInfo_result(const SliceEntry_GetSliceInfo_result&);
+  SliceEntry_GetSliceInfo_result& operator=(const SliceEntry_GetSliceInfo_result&);
+  SliceEntry_GetSliceInfo_result() {
+  }
+
+  virtual ~SliceEntry_GetSliceInfo_result() throw();
+  SliceInfo success;
+
+  _SliceEntry_GetSliceInfo_result__isset __isset;
+
+  void __set_success(const SliceInfo& val);
+
+  bool operator == (const SliceEntry_GetSliceInfo_result & rhs) const
+  {
+    if (!(success == rhs.success))
+      return false;
+    return true;
+  }
+  bool operator != (const SliceEntry_GetSliceInfo_result &rhs) const {
+    return !(*this == rhs);
+  }
+
+  bool operator < (const SliceEntry_GetSliceInfo_result & ) const;
+
+  uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+  uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+
+};
+
+typedef struct _SliceEntry_GetSliceInfo_presult__isset {
+  _SliceEntry_GetSliceInfo_presult__isset() : success(false) {}
+  bool success :1;
+} _SliceEntry_GetSliceInfo_presult__isset;
+
+class SliceEntry_GetSliceInfo_presult {
+ public:
+
+
+  virtual ~SliceEntry_GetSliceInfo_presult() throw();
+  SliceInfo* success;
+
+  _SliceEntry_GetSliceInfo_presult__isset __isset;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
 
@@ -427,9 +542,12 @@ class SliceEntryClient : virtual public SliceEntryIf {
   Pointer RequstMDSFile(const std::string& filePath);
   void send_RequstMDSFile(const std::string& filePath);
   Pointer recv_RequstMDSFile();
-  void GetTileVirtualData(std::vector<int8_t> & _return, const int32_t Level, const int32_t x, const int32_t y);
-  void send_GetTileVirtualData(const int32_t Level, const int32_t x, const int32_t y);
+  void GetTileVirtualData(std::vector<int8_t> & _return, const Pointer key, const int32_t Level, const int32_t x, const int32_t y);
+  void send_GetTileVirtualData(const Pointer key, const int32_t Level, const int32_t x, const int32_t y);
   void recv_GetTileVirtualData(std::vector<int8_t> & _return);
+  void GetSliceInfo(SliceInfo& _return, const Pointer key);
+  void send_GetSliceInfo(const Pointer key);
+  void recv_GetSliceInfo(SliceInfo& _return);
   int32_t add(const int32_t a, const int32_t b);
   void send_add(const int32_t a, const int32_t b);
   int32_t recv_add();
@@ -450,12 +568,14 @@ class SliceEntryProcessor : public ::apache::thrift::TDispatchProcessor {
   ProcessMap processMap_;
   void process_RequstMDSFile(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
   void process_GetTileVirtualData(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
+  void process_GetSliceInfo(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
   void process_add(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext);
  public:
   SliceEntryProcessor(::apache::thrift::stdcxx::shared_ptr<SliceEntryIf> iface) :
     iface_(iface) {
     processMap_["RequstMDSFile"] = &SliceEntryProcessor::process_RequstMDSFile;
     processMap_["GetTileVirtualData"] = &SliceEntryProcessor::process_GetTileVirtualData;
+    processMap_["GetSliceInfo"] = &SliceEntryProcessor::process_GetSliceInfo;
     processMap_["add"] = &SliceEntryProcessor::process_add;
   }
 
@@ -494,13 +614,23 @@ class SliceEntryMultiface : virtual public SliceEntryIf {
     return ifaces_[i]->RequstMDSFile(filePath);
   }
 
-  void GetTileVirtualData(std::vector<int8_t> & _return, const int32_t Level, const int32_t x, const int32_t y) {
+  void GetTileVirtualData(std::vector<int8_t> & _return, const Pointer key, const int32_t Level, const int32_t x, const int32_t y) {
     size_t sz = ifaces_.size();
     size_t i = 0;
     for (; i < (sz - 1); ++i) {
-      ifaces_[i]->GetTileVirtualData(_return, Level, x, y);
+      ifaces_[i]->GetTileVirtualData(_return, key, Level, x, y);
     }
-    ifaces_[i]->GetTileVirtualData(_return, Level, x, y);
+    ifaces_[i]->GetTileVirtualData(_return, key, Level, x, y);
+    return;
+  }
+
+  void GetSliceInfo(SliceInfo& _return, const Pointer key) {
+    size_t sz = ifaces_.size();
+    size_t i = 0;
+    for (; i < (sz - 1); ++i) {
+      ifaces_[i]->GetSliceInfo(_return, key);
+    }
+    ifaces_[i]->GetSliceInfo(_return, key);
     return;
   }
 
@@ -546,9 +676,12 @@ class SliceEntryConcurrentClient : virtual public SliceEntryIf {
   Pointer RequstMDSFile(const std::string& filePath);
   int32_t send_RequstMDSFile(const std::string& filePath);
   Pointer recv_RequstMDSFile(const int32_t seqid);
-  void GetTileVirtualData(std::vector<int8_t> & _return, const int32_t Level, const int32_t x, const int32_t y);
-  int32_t send_GetTileVirtualData(const int32_t Level, const int32_t x, const int32_t y);
+  void GetTileVirtualData(std::vector<int8_t> & _return, const Pointer key, const int32_t Level, const int32_t x, const int32_t y);
+  int32_t send_GetTileVirtualData(const Pointer key, const int32_t Level, const int32_t x, const int32_t y);
   void recv_GetTileVirtualData(std::vector<int8_t> & _return, const int32_t seqid);
+  void GetSliceInfo(SliceInfo& _return, const Pointer key);
+  int32_t send_GetSliceInfo(const Pointer key);
+  void recv_GetSliceInfo(SliceInfo& _return, const int32_t seqid);
   int32_t add(const int32_t a, const int32_t b);
   int32_t send_add(const int32_t a, const int32_t b);
   int32_t recv_add(const int32_t seqid);

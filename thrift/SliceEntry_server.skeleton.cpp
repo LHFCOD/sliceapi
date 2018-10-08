@@ -57,10 +57,13 @@ public:
     }
   }
 
-  void GetTileVirtualData(std::vector<int8_t> &_return, const int32_t Level, const int32_t x, const int32_t y)
+  void GetTileVirtualData(std::vector<int8_t> &_return, const Pointer key, const int32_t Level, const int32_t x, const int32_t y)
   {
     // Your implementation goes here
     printf("GetTileVirtualData\n");
+    MDSFile *pMDSFile = (MDSFile *)key;
+    FileBlock *block = pMDSFile->GetTileVirtualData(Level, x, y);
+    _return.assign(block->p, block->p + block->len);
   }
 
   int32_t add(const int32_t a, const int32_t b)
@@ -68,6 +71,18 @@ public:
     // Your implementation goes here
     printf("add\n");
     return a + b;
+  }
+  void GetSliceInfo(SliceInfo &_return, const Pointer key)
+  {
+    // Your implementation goes here
+    printf("GetSliceInfo\n");
+    MDSFile *pMDSFile = (MDSFile *)key;
+    ImageInfo info = pMDSFile->info;
+    _return.LayerCount = info.LayerCount;
+    _return.ImageWidth = info.ImageWidth;
+    _return.ImageHeight=info.ImageHeight;
+    _return.TileWidth = info.TileWidth;
+    _return.TileHeight = info.TileHeight;
   }
 };
 

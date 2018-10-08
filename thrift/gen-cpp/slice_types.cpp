@@ -13,4 +13,188 @@
 
 namespace Slice {
 
+
+SliceInfo::~SliceInfo() throw() {
+}
+
+
+void SliceInfo::__set_LayerCount(const int32_t val) {
+  this->LayerCount = val;
+}
+
+void SliceInfo::__set_ImageWidth(const int32_t val) {
+  this->ImageWidth = val;
+}
+
+void SliceInfo::__set_ImageHeight(const int32_t val) {
+  this->ImageHeight = val;
+}
+
+void SliceInfo::__set_TileWidth(const int32_t val) {
+  this->TileWidth = val;
+}
+
+void SliceInfo::__set_TileHeight(const int32_t val) {
+  this->TileHeight = val;
+}
+std::ostream& operator<<(std::ostream& out, const SliceInfo& obj)
+{
+  obj.printTo(out);
+  return out;
+}
+
+
+uint32_t SliceInfo::read(::apache::thrift::protocol::TProtocol* iprot) {
+
+  ::apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
+  uint32_t xfer = 0;
+  std::string fname;
+  ::apache::thrift::protocol::TType ftype;
+  int16_t fid;
+
+  xfer += iprot->readStructBegin(fname);
+
+  using ::apache::thrift::protocol::TProtocolException;
+
+  bool isset_LayerCount = false;
+  bool isset_ImageWidth = false;
+  bool isset_ImageHeight = false;
+  bool isset_TileWidth = false;
+  bool isset_TileHeight = false;
+
+  while (true)
+  {
+    xfer += iprot->readFieldBegin(fname, ftype, fid);
+    if (ftype == ::apache::thrift::protocol::T_STOP) {
+      break;
+    }
+    switch (fid)
+    {
+      case 1:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32(this->LayerCount);
+          isset_LayerCount = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 2:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32(this->ImageWidth);
+          isset_ImageWidth = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 3:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32(this->ImageHeight);
+          isset_ImageHeight = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 4:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32(this->TileWidth);
+          isset_TileWidth = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 5:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32(this->TileHeight);
+          isset_TileHeight = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      default:
+        xfer += iprot->skip(ftype);
+        break;
+    }
+    xfer += iprot->readFieldEnd();
+  }
+
+  xfer += iprot->readStructEnd();
+
+  if (!isset_LayerCount)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_ImageWidth)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_ImageHeight)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_TileWidth)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_TileHeight)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  return xfer;
+}
+
+uint32_t SliceInfo::write(::apache::thrift::protocol::TProtocol* oprot) const {
+  uint32_t xfer = 0;
+  ::apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
+  xfer += oprot->writeStructBegin("SliceInfo");
+
+  xfer += oprot->writeFieldBegin("LayerCount", ::apache::thrift::protocol::T_I32, 1);
+  xfer += oprot->writeI32(this->LayerCount);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("ImageWidth", ::apache::thrift::protocol::T_I32, 2);
+  xfer += oprot->writeI32(this->ImageWidth);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("ImageHeight", ::apache::thrift::protocol::T_I32, 3);
+  xfer += oprot->writeI32(this->ImageHeight);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("TileWidth", ::apache::thrift::protocol::T_I32, 4);
+  xfer += oprot->writeI32(this->TileWidth);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("TileHeight", ::apache::thrift::protocol::T_I32, 5);
+  xfer += oprot->writeI32(this->TileHeight);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldStop();
+  xfer += oprot->writeStructEnd();
+  return xfer;
+}
+
+void swap(SliceInfo &a, SliceInfo &b) {
+  using ::std::swap;
+  swap(a.LayerCount, b.LayerCount);
+  swap(a.ImageWidth, b.ImageWidth);
+  swap(a.ImageHeight, b.ImageHeight);
+  swap(a.TileWidth, b.TileWidth);
+  swap(a.TileHeight, b.TileHeight);
+}
+
+SliceInfo::SliceInfo(const SliceInfo& other0) {
+  LayerCount = other0.LayerCount;
+  ImageWidth = other0.ImageWidth;
+  ImageHeight = other0.ImageHeight;
+  TileWidth = other0.TileWidth;
+  TileHeight = other0.TileHeight;
+}
+SliceInfo& SliceInfo::operator=(const SliceInfo& other1) {
+  LayerCount = other1.LayerCount;
+  ImageWidth = other1.ImageWidth;
+  ImageHeight = other1.ImageHeight;
+  TileWidth = other1.TileWidth;
+  TileHeight = other1.TileHeight;
+  return *this;
+}
+void SliceInfo::printTo(std::ostream& out) const {
+  using ::apache::thrift::to_string;
+  out << "SliceInfo(";
+  out << "LayerCount=" << to_string(LayerCount);
+  out << ", " << "ImageWidth=" << to_string(ImageWidth);
+  out << ", " << "ImageHeight=" << to_string(ImageHeight);
+  out << ", " << "TileWidth=" << to_string(TileWidth);
+  out << ", " << "TileHeight=" << to_string(TileHeight);
+  out << ")";
+}
+
 } // namespace

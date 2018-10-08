@@ -22,6 +22,64 @@ namespace Slice {
 
 typedef int64_t Pointer;
 
+class SliceInfo;
+
+
+class SliceInfo : public virtual ::apache::thrift::TBase {
+ public:
+
+  SliceInfo(const SliceInfo&);
+  SliceInfo& operator=(const SliceInfo&);
+  SliceInfo() : LayerCount(0), ImageWidth(0), ImageHeight(0), TileWidth(0), TileHeight(0) {
+  }
+
+  virtual ~SliceInfo() throw();
+  int32_t LayerCount;
+  int32_t ImageWidth;
+  int32_t ImageHeight;
+  int32_t TileWidth;
+  int32_t TileHeight;
+
+  void __set_LayerCount(const int32_t val);
+
+  void __set_ImageWidth(const int32_t val);
+
+  void __set_ImageHeight(const int32_t val);
+
+  void __set_TileWidth(const int32_t val);
+
+  void __set_TileHeight(const int32_t val);
+
+  bool operator == (const SliceInfo & rhs) const
+  {
+    if (!(LayerCount == rhs.LayerCount))
+      return false;
+    if (!(ImageWidth == rhs.ImageWidth))
+      return false;
+    if (!(ImageHeight == rhs.ImageHeight))
+      return false;
+    if (!(TileWidth == rhs.TileWidth))
+      return false;
+    if (!(TileHeight == rhs.TileHeight))
+      return false;
+    return true;
+  }
+  bool operator != (const SliceInfo &rhs) const {
+    return !(*this == rhs);
+  }
+
+  bool operator < (const SliceInfo & ) const;
+
+  uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+  uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+
+  virtual void printTo(std::ostream& out) const;
+};
+
+void swap(SliceInfo &a, SliceInfo &b);
+
+std::ostream& operator<<(std::ostream& out, const SliceInfo& obj);
+
 } // namespace
 
 #endif

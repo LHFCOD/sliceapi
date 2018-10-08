@@ -24,9 +24,18 @@ int main()
     try
     {
         transport->open();
-        Pointer a = client.RequstMDSFile("/home/mi/project/slicePro/sliceapi/data/1.mds");
+        Pointer key = client.RequstMDSFile("/home/mi/project/slicePro/sliceapi/data/1.mds");
         // int a = client.add(3, 4);
-        cout << a;
+        std::vector<int8_t> data;
+        client.GetTileVirtualData(data, key, 12, 1, 1);
+        int i = 0;
+        for (int8_t c : data)
+        {
+            cout << (char)c;
+            i++;
+            if (i > 100)
+                break;
+        }
         transport->close();
     }
     catch (TException &tx)
