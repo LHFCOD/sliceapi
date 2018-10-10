@@ -7,15 +7,26 @@
         "env": {
             "XML":"/home/mi/software/pugixml/src",
             "BOOST_ROOT":"/home/mi/software/boost_1_60_0",
-            "CIMG":"/home/mi/software/CImge"
+            "CIMG":"/home/mi/software/CImge",
+            "JPEG":"/home/mi/software/jpeg-8c/build1"
         }
     },
     "tasks": [
+        {
+            "label": "cmake-clean",
+            "type": "shell",
+            "command": "rm -rf *",
+            "group": "build",
+            "options": {
+                "cwd": "cmake-build-debug"
+            }
+        },
         {
             "label": "cmake-debug",
             "type": "shell",
             "command": "cmake -DCMAKE_BUILD_TYPE=Debug ..",
             "group": "build",
+            "dependsOn":"cmake-clean",
             "options": {
                 "cwd": "cmake-build-debug"
             }

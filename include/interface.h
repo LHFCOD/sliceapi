@@ -3,6 +3,7 @@
 #include <jpeglib.h>
 #include <jerror.h>
 #define cimg_plugin "plugins/jpeg_buffer.h"
+#define cimg_display 0
 #include <CImg.h>
 using namespace cimg_library;
 //#include "MicroComDocIO.h"

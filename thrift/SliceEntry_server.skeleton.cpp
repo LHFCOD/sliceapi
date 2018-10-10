@@ -64,6 +64,7 @@ public:
     MDSFile *pMDSFile = (MDSFile *)key;
     FileBlock *block = pMDSFile->GetTileVirtualData(Level, x, y);
     _return.assign(block->p, block->p + block->len);
+    delete block;
   }
 
   int32_t add(const int32_t a, const int32_t b)

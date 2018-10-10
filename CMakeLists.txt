@@ -15,6 +15,8 @@ list(APPEND DIR_SRCS "$ENV{BOOST_ROOT}/libs/iostreams/src/mapped_file.cpp")
 include_directories($ENV{BOOST_ROOT})
 include_directories($ENV{XML})
 include_directories($ENV{CIMG})
+include_directories("$ENV{JPEG}/include")
+link_directories("$ENV{JPEG}/lib")
 # display include file in project
 # 平台判断
 IF (CMAKE_SYSTEM_NAME MATCHES "Windows")                                          	
